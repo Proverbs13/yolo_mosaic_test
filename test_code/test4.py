@@ -6,12 +6,12 @@ import math
 # 터미널에서 pip install ultralytics 이후 진행해야함
 # model 아직 학습이 다 안되서 정확도 측면에서는 떨어짐
 
-# model = 개인 경로에 맞게 수정해야
-model = YOLO('C:/Code/PROJECT/yolo_pj/models/best1027_4.pt')
-# model = YOLO('C:/Code/PROJECT/yolo_pj/models/best3.pt')
-# model = YOLO('C:/Code/PROJECT/yolo_pj/models/best.pt')
-# model = YOLO('C:/Code/PROJECT/yolo_pj/models/yolov8n.pt')
-# model = YOLO('C:/Code/PROJECT/yolo_pj/models/yolov8n-face.pt')
+# model = 개인 경로에 맞게 수정해야함
+model = YOLO('C:/Code/PROJECT/yolo_mosaic_test/models/best1027_4.pt')
+# model = YOLO('C:/Code/PROJECT/yolo_mosaic_test/models/best3.pt')
+# model = YOLO('C:/Code/PROJECT/yolo_mosaic_test/models/best.pt')
+# model = YOLO('C:/Code/PROJECT/yolo_mosaic_test/models/yolov8n.pt')
+# model = YOLO('C:/Code/PROJECT/yolo_mosaic_test/models/yolov8n-face.pt')
 
 
 
@@ -92,8 +92,8 @@ cv2.destroyAllWindows()
 
 
 
-# # 사진 한개 테스트용 코드
-# result = model.predict("C:/Code/PROJECT/yolo_pj/models/test_data/k.jpg", save=True, conf=0.5)
+# # 사진 한개 테스트용 코드 = 개인 경로에 맞게 수정해야함
+# result = model.predict("C:/Code/PROJECT/yolo_mosaic_test/models/test_data/k.jpg", save=True, conf=0.5)
 # plots = result[0].plot()
 # cv2.imshow("plot", plots)
 # cv2.waitKey(0)
